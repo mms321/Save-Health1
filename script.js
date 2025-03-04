@@ -43,7 +43,9 @@ if (countOfPills === 0) {
 document.getElementById("btn-buy-tablets").addEventListener("click", () => {
     countOfPills = 5;
     console.log(countOfPills);
-    document.getElementById("count-of-tablets").innerText = "💊".repeat(countOfPills);
+    document.getElementById("count-of-tablets").innerText = "💊".repeat(
+        countOfPills
+    );
     document.getElementById("btn_health_wishes").style.display = "inline-block";
 });
 
