@@ -20,10 +20,30 @@ const arrayofhealthWishes = [
 "Медитуй та розслабляйся – душевний спокій важливий!",
 "Люби себе – це найкраща турбота про здоров’я!",
 ]
-let countofPills = 5;
-document.getElementById("count-of-tablets").ennerText = "💊", repeat(countofPills);
-document.getElementById("btn_health_wishes").addEventListener ("click", () =>(
-let index = Math.floor(Math.random() * arrayofhealthWishes.lenght);
-document.getElementById ("p-health-wishes).innerText = 
-    arrayofhealthWishes[index];
+let countOfPills = 5;
+document.getElementById("count-of-tablets").innerText = "💊".repeat(countOfPills);
+
+document.getElementById("btn_health_wishes").addEventListener("click", () => {
+    let index = Math.floor(Math.random() * arrayOfHealthWishes.length);
+    document.getElementById("p-health-wishes").innerText = arrayOfHealthWishes[index];
+});
+
+countOfPills--;
+console.log(countOfPills);
+
+document.getElementById("count-of-tablets").innerText =
+    "💊".repeat(countOfPills) + "❌".repeat(5 - countOfPills);
+console.log("💊".repeat(countOfPills) + "❌".repeat(5 - countOfPills));
+
+if (countOfPills === 0) {
+    console.log("countOfPills = 0");
+    document.getElementById("btn_health_wishes").style.display = "none";
+};
+
+document.getElementById("btn-buy-tablets").addEventListener("click", () => {
+    countOfPills = 5;
+    console.log(countOfPills);
+    document.getElementById("count-of-tablets").innerText = "💊".repeat(countOfPills);
+    document.getElementById("btn_health_wishes").style.display = "inline-block";
+});
 
