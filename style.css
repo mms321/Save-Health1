@@ -7,7 +7,6 @@ body {
     text-align: center;
 }
 
-
 header {
     background-color: #ff6b6b;
     color: white;
@@ -20,8 +19,8 @@ h1 {
 }
 
 img {
-    max-width: 150px;
-    margin-top: 10px;
+    max-width: 500px;
+    margin-top: 50px;
 }
 
 
@@ -78,6 +77,10 @@ button:hover {
 
 /* Відображення таблеток */
 #count-of-tablets {
+    font-size: 24px;
+    margin-top: 10px;
+}
+#btn-buy-tablets { 
     font-size: 24px;
     margin-top: 10px;
 }

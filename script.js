@@ -26,7 +26,10 @@ document.getElementById("count-of-tablets").innerText = "💊".repeat(countOfPil
 document.getElementById("btn_health_wishes").addEventListener("click", () => {
     let index = Math.floor(Math.random() * arrayOfHealthWishes.length);
     document.getElementById("p-health-wishes").innerText = arrayOfHealthWishes[index];
-});
+   
+    countOfPills--;
+    console.log(countOfPills);
+
 
 countOfPills--;
 console.log(countOfPills);
@@ -39,7 +42,7 @@ if (countOfPills === 0) {
     console.log("countOfPills = 0");
     document.getElementById("btn_health_wishes").style.display = "none";
 };
-
+});
 document.getElementById("btn-buy-tablets").addEventListener("click", () => {
     countOfPills = 5;
     console.log(countOfPills);
