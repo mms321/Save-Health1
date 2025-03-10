@@ -84,3 +84,14 @@ button:hover {
     font-size: 24px;
     margin-top: 10px;
 }
+/*кнопка купівлі таблеток*/
+#btn-buy-tablets {
+    background: #ff6b6b;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}

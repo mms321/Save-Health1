@@ -31,8 +31,6 @@ document.getElementById("btn_health_wishes").addEventListener("click", () => {
     console.log(countOfPills);
 
 
-countOfPills--;
-console.log(countOfPills);
 
 document.getElementById("count-of-tablets").innerText =
     "💊".repeat(countOfPills) + "❌".repeat(5 - countOfPills);
