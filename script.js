@@ -50,3 +50,29 @@ document.getElementById("btn-buy-tablets").addEventListener("click", () => {
     document.getElementById("btn_health_wishes").style.display = "inline-block";
 });
 
+/*gallery*/
+
+let galleryImage = 1
+
+document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
+
+document.getElementById('right-arrow').addEventListener('click',()=>{
+    galletyImage++
+    console.log(galleryImage)
+
+    if(galleryImage == 3) galleryImage = 1
+
+    document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
+})
+
+
+document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
+
+document.getElementById('left-arrow').addEventListener('click',()=>{
+    galletyImage++
+    console.log(galleryImage)
+
+    if(galleryImage == 1) galleryImage = 3
+
+    document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
+})

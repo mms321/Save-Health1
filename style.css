@@ -95,3 +95,22 @@ button:hover {
     cursor: pointer;
     display: inline-block;
 }
+ /*GALLERY*/
+
+ .gallery{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+ }
+
+ #main-image {
+    width: 300px;
+ }
+
+ #left-arrow, #right-arrow{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+ }
