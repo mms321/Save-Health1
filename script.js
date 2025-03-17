@@ -20,6 +20,18 @@ const arrayOfHealthWishes = [
 "Медитуй та розслабляйся – душевний спокій важливий!",
 "Люби себе – це найкраща турбота про здоров’я!",
 ]
+
+const arrayOfImages = [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "1.1.jpg"
+]
+
+
+
+
+
 let countOfPills = 5;
 document.getElementById("count-of-tablets").innerText = "💊".repeat(countOfPills);
 
@@ -54,25 +66,25 @@ document.getElementById("btn-buy-tablets").addEventListener("click", () => {
 
 let galleryImage = 1
 
-document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
+document.getElementById("main-image").setAttribute('src',`images/gallery/${arrayOfImages[galleryImage-1]}`)
 
 document.getElementById('right-arrow').addEventListener('click',()=>{
     galleryImage++
     console.log(galleryImage)
 
-    if (galleryImage > 3) galleryImage = 1;
+    if (galleryImage > 4) galleryImage = 1;
 
-    document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
+    document.getElementById("main-image").setAttribute('src',`images/gallery/${arrayOfImages[galleryImage-1]}`)
 })
 
 
-document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
+
 
 document.getElementById('left-arrow').addEventListener('click',()=>{
-    galletyImage++
+    galleryImage--
     console.log(galleryImage)
 
-    if (galleryImage < 1) galleryImage = 3;
+    if (galleryImage < 1) galleryImage = 4;
 
-    document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
+    document.getElementById("main-image").setAttribute('src',`images/gallery/${arrayOfImages[galleryImage-1]}`)
 })

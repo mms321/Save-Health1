@@ -101,16 +101,30 @@ button:hover {
 width: 100%;
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
+gap: 20px;
  }
 
  #main-image {
-    width: 300px;
- }
+    width: 400px;
+    display: block;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
 
- #left-arrow, #right-arrow{
-    width: 32px;
-    height: 32px;
+
+ #left-arrow, #right-arrow {
+    width: 50px;
+    height: 50px;
     cursor: pointer;
- }
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border-radius: 50%;
+}
+#left-arrow:hover, #right-arrow:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+#left-arrow:active, #right-arrow:active {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    transform: scale(0.85);
+}
