@@ -108,6 +108,7 @@ gap: 20px;
 
  #main-image {
     width: 400px;
+    height: 300px;
     display: block;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
