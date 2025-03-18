@@ -50,7 +50,7 @@ console.log("💊".repeat(countOfPills) + "❌".repeat(5 - countOfPills));
 
 if (countOfPills === 0) {
     console.log("countOfPills = 0");
-    document.getElementById("btn_health_wishes").style.display = "none";
+    document.getElementById("btn_health_wishes").disabled = true;
 };
 });
 document.getElementById("btn-buy-tablets").addEventListener("click", () => {
@@ -59,7 +59,7 @@ document.getElementById("btn-buy-tablets").addEventListener("click", () => {
     document.getElementById("count-of-tablets").innerText = "💊".repeat(
         countOfPills
     );
-    document.getElementById("btn_health_wishes").style.display = "inline-block";
+    document.getElementById("btn_health_wishes").disabled = false;
 });
 
 /*gallery*/

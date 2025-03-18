@@ -53,6 +53,20 @@ p {
 }
 
 /* Кнопки */
+.wishes {
+    border: 2px solid #c70000;
+    background-color: #a7ffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+
+}
+
+
+
+
 button {
     background-color: #ff6b6b;
     color: white;
