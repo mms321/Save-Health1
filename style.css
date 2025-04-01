@@ -149,6 +149,22 @@ gap: 20px;
 }
 
 /*Вітаміни---------------------------------------------------*/
+.vitamins h2 {
+    font-size: 40px;
+    color: #444;
+    margin-top: 20px;
+
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 100px;
+    display: inline-block;
+    min-width: 300px;
+}
+
+
+
+
+
 #p-vitamins {
 display: flex;
 flex-direction: row;
