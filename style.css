@@ -157,6 +157,9 @@ flex-wrap: wrap;
 }
 
 .vitamin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 border: 1px solid rgb(124, 124, 124);
 margin: 10px;
 padding: 10px;
@@ -167,10 +170,13 @@ min-height: 300px;
 text-align:center;
 }
 
-.vitamin span:first-child{
+.vitamin p:first-child{
+    align-self: flex-end;
     text-align: right;
-    font-size: 10px;
-    color: #999999
+    font-size: 20px;
+    color: #999999;
+    text-align: center;
+    
 }
 
 .vitamin img {
@@ -181,9 +187,9 @@ text-align:center;
 
 .vitamin p{
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
 }
-.vitamin span:last-child{
+.vitamin p:last-child{
     text-align: center;
     width: 100%;
     border-top: 1px solid #999999;
@@ -191,3 +197,8 @@ text-align:center;
     background-color: #cccccc;
     
 }
+/*description vitamin*/
+ .vitamin div{
+margin-top: auto;
+width: 80%;
+ }

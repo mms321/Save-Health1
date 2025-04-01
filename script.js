@@ -153,13 +153,15 @@ arrayOfObjects.forEach((item) =>{
     document.getElementById("p-vitamins").appendChild(divVitamin)
 
     divVitamin.innerHTML =`
+            <p>${item.id}<p>
             <h3>${item.title}</h3>
             <hr>
             <img src="images/vitamins/vitamin-a.png" alt="">
             <p>${item.description}</p>
-            <span>${'💚'.repeat(item.rating)+'🤍'.repeat(5-item.rating)}</span>
+            <div>
+            <p>${'💚'.repeat(item.rating)+'🤍'.repeat(5-item.rating)}</p>
             <p>${item.type}</p>
-            <span>${item.id}</span>
+            </div>
     
     `
 })
