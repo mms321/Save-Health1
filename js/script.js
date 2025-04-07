@@ -139,31 +139,29 @@ const arrayOfObjects = [
         type:"Жиророзчинний",
     },
 ]
-
-console.log(arrayOfObjects)
-
-
-arrayOfObjects.forEach((item) =>{
-    console.log(item)
-
+fetch('js/vitamins.json')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach((item, index) => {
+                    //console.log(" елемент №, index, item")
     let divVitamin = document.createElement('div')
-    divVitamin.innerText = item.title
     divVitamin.classList.add('vitamin')
 
     document.getElementById("p-vitamins").appendChild(divVitamin)
-
     divVitamin.innerHTML =`
             <p>${item.id}<p>
             <h3>${item.title}</h3>
             <hr>
             <img src="images/vitamins/${item.photo}" alt="">
             <p>${item.description}</p>
+
             <div>
-            <p>${'💚'.repeat(item.rating)+'🤍'.repeat(5-item.rating)}</p>
-            <p>${item.type}</p>
+              <p>${'💚'.repeat(item.rating)+'🤍'.repeat(5-item.rating)}</p>
+              <p>${item.type}</p>
             </div>
-    
     `
-})
-
-
+        document.getElementById("p-vitamins").appendChild(divVitamin)
+        })
+    })
+.catch(error =>
+     {console.error('Помилка при завантаженні JSON:', error);});
