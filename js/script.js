@@ -92,53 +92,7 @@ document.getElementById('left-arrow').addEventListener('click',()=>{
 /*VITAMINS*/
 
 
-const arrayOfObjects = [
-    {
-        id:1,
-        title:"Вітамін B3",
-        photo:"vitamin.png",
-        description:"Вітамін B3 (ніацин) важливий для обміну речовин і підтримки здоров'я шкіри.",
-        rating:"4",
-        type:"Водорозчинний",
-    },
-    {
-        id:2,
-        title:"Омега-3",
-        photo:"omega-3.png",
-        description:"Омега-3 жирні кислоти сприяють здоров'ю серця і мозку.",
-        rating:"5",
-        type:"Жирні кислоти",
-    }, {
-        id:3,
-        title:"Магній",
-        photo:"magnesium.png",
-        description:"Магній підтримує роботу м'язів, нервової системи і кісток.",
-        rating:"4",
-        type:"Мінерал",
-    }, {
-        id:4,
-        title:"Вітамін С",
-        photo:"vitamin-c.png",
-        description:"Вітамін C зміцнює імунітет і сприяє здоров'ю шкіри.",
-        rating:"5",
-        type:"Водорозчинний",
-    }, {
-        id:5,
-        title:"Вітамін D",
-        photo:"vitamin-d.png",
-        description:"Вітамін D допомагає засвоювати кальцій і зміцнює кістки.",
-        rating:"5",
-        type:"Жиророзчинний",
-    },
-    {
-        id:6,
-        title:"Вітамін А",
-        photo:"vitamin-a.png",
-        description:"Вітамін A підтримує зір, імунну систему та здоров'я шкіри.",
-        rating:"5",
-        type:"Жиророзчинний",
-    },
-]
+
 fetch('js/vitamins.json')
     .then(response => response.json())
     .then(data => {
@@ -149,13 +103,14 @@ fetch('js/vitamins.json')
 
     document.getElementById("p-vitamins").appendChild(divVitamin)
     divVitamin.innerHTML =`
-            <p>${item.id}<p>
+            <p>${item.id}</p>
             <h3>${item.title}</h3>
             <hr>
-            <img src="images/vitamins/${item.photo}" alt="">
+            <img src="images/vitamins/${item.photo}" alt="Картинка для ${item.title}" onerror="this.onerror = null; this.src='images/vitamins/default.png';">
             <p>${item.description}</p>
 
             <div>
+             <img src="images/vitamins/${item.schema}" alt="" onerror="this.onerror = null; this.src='images/vitamins/default_schema.png';">
               <p>${'💚'.repeat(item.rating)+'🤍'.repeat(5-item.rating)}</p>
               <p>${item.type}</p>
             </div>

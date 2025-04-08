@@ -1,229 +1,248 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  height: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header {
-    background-color: #cae1ff;
-    color: white;
-    padding: 15px 0;
+  background-color: #cae1ff;
+  color: white;
+  padding: 15px 0;
 }
 
 h1 {
-    margin: 0;
-    font-size: 28px;
+  margin: 0;
+  font-size: 28px;
 }
 
 img {
-    max-width: 500px;
-    margin-top: 50px;
+  max-width: 500px;
+  margin-top: 50px;
 }
-
 
 main {
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 1400px;
 }
 
-
 .highlights-content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 article {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
 }
 
 h2 {
-    color: #333;
+  color: #333;
 }
 
 p {
-    color: #555;
+  color: #555;
 }
 
 /* Кнопки */
 .wishes {
-    border: 2px solid #c70000;
-    background-color: #a7ffff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
-    margin: 20px auto;
-
+  border: 2px solid #c70000;
+  background-color: #a7ffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  margin: 20px auto;
 }
 
-
-
-
 button {
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-    background-color: #d30000;
+  background-color: #d30000;
 }
 
 /* Футер */
 .site-footer {
-    background: #222;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
+  background: #222;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 /* Відображення таблеток */
 #count-of-tablets {
-    font-size: 24px;
-    margin-top: 10px;
+  font-size: 24px;
+  margin-top: 10px;
 }
-#btn-buy-tablets { 
-    font-size: 24px;
-    margin-top: 10px;
+#btn-buy-tablets {
+  font-size: 24px;
+  margin-top: 10px;
 }
 /*кнопка купівлі таблеток*/
 #btn-buy-tablets {
-    background: #ff6b6b;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
+  background: #ff6b6b;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
 }
 #btn-buy-tablets:hover {
-    background-color: #d30000;
+  background-color: #d30000;
 }
 
- /*GALLERY*/
+/*GALLERY*/
 
- .gallery{
-width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 20px;
- }
-
- #main-image {
-    width: 400px;
-    height: 300px;
-    display: block;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
+#main-image {
+  width: 400px;
+  height: 300px;
+  display: block;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
 
- #left-arrow, #right-arrow {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
-    border-radius: 50%;
+#left-arrow,
+#right-arrow {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+  border-radius: 50%;
 }
-#left-arrow:hover, #right-arrow:hover {
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+#left-arrow:hover,
+#right-arrow:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
 }
-#left-arrow:active, #right-arrow:active {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-    transform: scale(0.85);
+#left-arrow:active,
+#right-arrow:active {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  transform: scale(0.85);
 }
 
 /*Вітаміни---------------------------------------------------*/
 .vitamins h2 {
-    font-size: 40px;
-    color: #444;
-    margin-top: 20px;
+  font-size: 40px;
+  color: #444;
+  margin-top: 20px;
 
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 100px;
-    display: inline-block;
-    min-width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 100px;
+  display: inline-block;
+  min-width: 300px;
 }
 
-
-
-
-
 #p-vitamins {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .vitamin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-border: 1px solid rgb(124, 124, 124);
-margin: 10px;
-padding: 10px;
-border-radius: 20px;
-box-shadow: #999999 5px 5px 10px;
-width: 250px;
-min-height: 300px;
-text-align:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(124, 124, 124);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: #999999 5px 5px 10px;
+  width: 350px;
+  min-height: 300px;
+  text-align: center;
 }
-.vitamin h3{
-    font-size: 30px;
-    color: #00c563;
-    font-weight: bold;
-    margin-bottom: 5px;  
- }
+.vitamin h3 {
+  font-size: 30px;
+  color: #00c563;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-.vitamin p:first-child{
-    align-self: flex-end;
-    text-align: right;
-    font-size: 20px;
-    color: #999999;
-    text-align: center;
-    
+.vitamin p:first-child {
+  align-self: flex-end;
+  text-align: right;
+  font-size: 20px;
+  color: #cfcfcf;
+  text-align: center;
 }
+/*hover*/
+.vitamin:hover p:first-child {
+  color: #222;
+  /* font-size: 25px; */
+}
+
+.vitamin:hover {
+  background-color: #e9e9e9;
+  /* transform: scale(1.02);
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer; */
+}
+
+
+
 
 .vitamin img {
-    width: 100px; 
-    height: auto; 
-    border-radius: 10px;
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
 }
+/*Схема картинка*/
+.vitamin div img {
+    margin-top: auto;
+    width: 90%;
+  }
+  
 
-.vitamin p{
-    text-align: justify;
-    font-size: 20px;
-    
+
+.vitamin p {
+  text-align: justify;
+  font-size: 20px;
 }
-.vitamin p:last-child{
-    text-align: center;
-    width: 100%;
-    border-top: 1px solid #999999;
-    border-bottom: 1px solid #999999;
-    background-color: #d6d6d6;
-    
-    
+.vitamin p:last-child {
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  background-color: #d6d6d6;
 }
 /*description vitamin*/
- .vitamin div{
-margin-top: auto;
-width: 90%;
- }
- 
+.vitamin div {
+  margin-top: auto;
+  width: 90%;
+}
